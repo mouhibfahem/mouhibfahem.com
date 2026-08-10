@@ -43,11 +43,11 @@ export default function AboutSection() {
             className="lg:col-span-5 relative"
           >
             <div className="glass-card rounded-2xl p-4 border border-gold-400/30 relative overflow-hidden group">
-              <div className="relative w-full h-[360px] rounded-xl overflow-hidden border border-gold-400/20 mb-4">
+              <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden border border-gold-400/20 mb-4">
                 <img
                   src="/mouhib.jpg"
                   alt="Mouhib Fahem - Élève Ingénieur ENICarthage"
-                  className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#070709] via-transparent to-transparent pointer-events-none" />
               </div>

@@ -159,26 +159,26 @@ export default function HeroSection() {
             </motion.div>
           </div>
 
-          {/* Right Column: Premium Framed Original Photo Showcase */}
+          {/* Right Column: Full Aspect-Ratio Original Photo Showcase */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="lg:col-span-5 relative flex items-center justify-center mt-4 lg:mt-0"
           >
-            {/* Glowing Golden Architectural Frame */}
-            <div className="relative w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[380px] h-[380px] sm:h-[480px] lg:h-[520px] rounded-3xl p-1 bg-gradient-to-b from-gold-300/50 via-gold-500/25 to-gold-700/10 shadow-gold-glow">
+            {/* Glowing Golden Architectural Frame with exact 3:4 aspect ratio */}
+            <div className="relative w-full max-w-[320px] sm:max-w-[370px] lg:max-w-[400px] aspect-[3/4] rounded-3xl p-1 bg-gradient-to-b from-gold-300/50 via-gold-500/25 to-gold-700/10 shadow-gold-glow">
               
-              {/* Inner Card Container with rounded corners & vignette overlay */}
+              {/* Inner Card Container: 100% full photo visibility */}
               <div className="w-full h-full rounded-[22px] overflow-hidden relative border border-gold-400/30 group">
                 <img
                   src="/mouhib.jpg"
                   alt="Mouhib Fahem - Élève Ingénieur ENICarthage"
-                  className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-700"
                 />
 
                 {/* Subtle gradient vignette overlay for premium feel */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#070709] via-transparent to-black/30 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#070709] via-transparent to-black/20 pointer-events-none" />
 
                 {/* Bottom Signature Badge Overlay */}
                 <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 z-20 glass-card p-2.5 sm:p-3.5 rounded-xl border border-gold-400/40 flex items-center justify-between backdrop-blur-xl">
@@ -192,7 +192,7 @@ export default function HeroSection() {
                 </div>
               </div>
 
-              {/* Floating Tech Badges around the portrait (positioned safely on mobile) */}
+              {/* Floating Tech Badges around the portrait */}
               <motion.div
                 animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
