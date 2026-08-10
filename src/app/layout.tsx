@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     description: 'Portfolio professionnel de Mouhib Fahem - ENICarthage Classe Terminale GI',
   },
   verification: {
-    google: 'googlebab2c3d5191a4480',
+    google: 'gJY-TGj-kIJy4LV73IgKzwO1MEKwVa1OXerpP52piBY',
   },
 };
 
