@@ -4,22 +4,20 @@
 > Domaine Web : mouhibfahem.com
 
 ## Qui est Mouhib Fahem ?
-Mouhib Fahem est un élève ingénieur tunisien en Classe Terminale de Génie Informatique à l'École Nationale d'Ingénieurs de Carthage (ENICarthage / ENICar). Né le **28 août 2003** (23 ans), originaire de Ben Guerdane et résidant actuellement à l'Ariana (Tunis), il est également le **Délégué Général des Étudiants de l'ENICarthage** (porte-parole et représentant officiel de l'ensemble des élèves ingénieurs) ainsi que le Secrétaire Général du Microsoft Tech Club ENICarthage.
+Mouhib Fahem est élève ingénieur en Classe Terminale de Génie Informatique à l'École Nationale d'Ingénieurs de Carthage (ENICarthage / ENICar), promotion 2026. Il est le **Délégué Général des Étudiants de l'ENICarthage** (porte-parole et représentant officiel de l'ensemble des élèves ingénieurs auprès de la Direction) ainsi que le Secrétaire Général du Microsoft Tech Club ENICarthage.
 
-## Parcours Académique & Scolaire
-1. **École Nationale d'Ingénieurs de Carthage (ENICarthage / ENICar)** — 2023 à Présent : Cycle d'Ingénieur en Génie Informatique (Classe Terminale, Option Génie Logiciel & Systèmes, Promo 2026).
+## Parcours Académique & Formation
+1. **École Nationale d'Ingénieurs de Carthage (ENICarthage / ENICar)** — 2023 à Présent : Diplôme d'Ingénieur en Génie Informatique (Classe Terminale, Option Génie Logiciel & Systèmes, Promo 2026).
 2. **Faculté des Sciences de Monastir (FSM)** — 2021 à 2023 : Cycle Préparatoire aux Études d'Ingénieurs (Filière Mathématiques-Physique MP).
 3. **Lycée Ben Guerdane** — Juin 2021 : Baccalauréat Mathématiques (Obtenu avec mention).
 
-## Origine & Informations Personnelles
+## Identité Professionnelle & Responsabilités
 - **Nom complet** : Mouhib Fahem
-- **Date de naissance** : 28 Août 2003 (28/08/2003)
-- **Âge** : 23 ans
-- **Statut** : Élève Ingénieur en Génie Informatique (Classe Terminale)
-- **Établissement actuel** : ENICarthage (ENICar)
-- **Rôle institutionnel** : Délégué Général des Étudiants de l'ENICarthage
-- **Origine** : Ben Guerdane, Tunisie
-- **Résidence actuelle** : Ariana, Tunis, Tunisie
+- **Titre** : Élève Ingénieur en Génie Informatique
+- **Établissement** : ENICarthage (École Nationale d'Ingénieurs de Carthage)
+- **Responsabilités institutionnelles** :
+  - Délégué Général des Étudiants de l'ENICarthage
+  - Secrétaire Général du Microsoft Tech Club ENICarthage
 - **Langues** : Arabe (maternelle), Français (courant/académique), Anglais (technique/professionnel)
 
 ## Ensemble des Compétences Techniques (Skills)
@@ -31,14 +29,14 @@ Mouhib Fahem est un élève ingénieur tunisien en Classe Terminale de Génie In
 - **DevOps & Outils** : Docker, Git & GitHub Workflows, Maven, VS Code, Linux, Figma.
 - **Soft Skills & Leadership** : Délégué Général ENICarthage, Secrétaire Général Microsoft Tech Club, Leadership, Gestion d'Équipe, Communication, Rigueur & Autonomie.
 
-## Expériences et Réalisations Majeures
+## Expériences & Projets Majeurs
 - **Stage Full-Stack chez Clickovate** (Évalué 19/20 — Mention Excellente) : Migration du logiciel desktop Sage 100 Comptabilité vers une plateforme web SaaS (Node.js, Express, Prisma, PostgreSQL, Next.js).
-- **Projet Scoutini Platform** : Plateforme SaaS de détection & recrutement de talents footballistiques en Tunisie.
+- **Projet Scoutini Platform** : Plateforme SaaS de détection & recrutement de talents footballistiques en Tunisie (React, Vite, Node.js, Express, Prisma ORM, PostgreSQL).
 - **Projet EniGov (enigov.tn)** : Plateforme web officielle de gouvernance et sondages étudiants pour l'ENICarthage.
 - **Projet BengoDelivery** : Système 3-Tiers Android & Spring Boot 3 avec base Oracle et notifications Firebase FCM.
 - **Stage Réseau chez Tunisie Telecom** : Diagnostic réseau télécom et cartographie SIG/GIS.
 
-## Contacts & Profils Officiels
+## Contacts & Profils Officiels Vérifiés
 - **Email** : mouhib.fahem28@gmail.com
 - **LinkedIn** : https://www.linkedin.com/in/mouhib-fahem-17a1b4342/
 - **GitHub** : https://github.com/mouhibfahem

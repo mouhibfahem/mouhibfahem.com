@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: 'Mouhib Fahem — Élève Ingénieur en Génie Informatique | ENICarthage',
-  description: 'Né le 28 août 2003 (23 ans), originaire de Ben Guerdane et résidant à l\'Ariana (Tunis), Mouhib Fahem est élève ingénieur en Classe Terminale de Génie Informatique à l\'ENICarthage. Délégué Général des Étudiants.',
+  description: 'Portfolio officiel de Mouhib Fahem, élève ingénieur en Génie Informatique à l\'ENICarthage (Classe Terminale) et Délégué Général des Étudiants. Spécialisé en ingénierie logicielle, Java, Spring Boot 3, Next.js & Réseaux CCNA.',
   applicationName: 'Mouhib Fahem',
   appleWebApp: {
     title: 'Mouhib Fahem',
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Mouhib Fahem — Élève Ingénieur en Génie Informatique (Classe Terminale)',
-    description: 'Né le 28 août 2003 (23 ans). Élève ingénieur GI à l\'ENICarthage & Délégué Général des Étudiants. Découvrez mes projets, compétences et stages.',
+    description: 'Portfolio officiel de Mouhib Fahem — Élève ingénieur GI à l\'ENICarthage & Délégué Général des Étudiants. Découvrez mes projets, compétences et stages.',
     url: 'https://mouhibfahem.vercel.app',
     siteName: 'Mouhib Fahem',
     locale: 'fr_FR',
@@ -76,50 +76,117 @@ export const metadata: Metadata = {
   },
 };
 
-const websiteJsonLd = {
+// Schema.org Graph combining ProfilePage, Person, WebSite, and WebApplications
+const structuredDataGraph = {
   '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  name: 'Mouhib Fahem',
-  alternateName: ['Mouhib Fahem Portfolio', 'Mouhib Fahem ENICarthage'],
-  url: 'https://mouhibfahem.vercel.app',
-};
-
-const personJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Person',
-  name: 'Mouhib Fahem',
-  birthDate: '2003-08-28',
-  alternateName: ['Mouhib Fahem ENICarthage', 'mouhibfahem'],
-  url: 'https://mouhibfahem.vercel.app',
-  image: 'https://mouhibfahem.vercel.app/mouhib.jpg',
-  sameAs: [
-    'https://www.linkedin.com/in/mouhib-fahem-17a1b4342/',
-    'https://github.com/mouhibfahem',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': 'https://mouhibfahem.vercel.app/#website',
+      'url': 'https://mouhibfahem.vercel.app',
+      'name': 'Mouhib Fahem',
+      'alternateName': ['Mouhib Fahem Portfolio', 'Mouhib Fahem ENICarthage'],
+      'publisher': {
+        '@id': 'https://mouhibfahem.vercel.app/#person',
+      },
+    },
+    {
+      '@type': 'ProfilePage',
+      '@id': 'https://mouhibfahem.vercel.app/#webpage',
+      'url': 'https://mouhibfahem.vercel.app',
+      'name': 'Mouhib Fahem — Portfolio Officiel',
+      'isPartOf': {
+        '@id': 'https://mouhibfahem.vercel.app/#website',
+      },
+      'mainEntity': {
+        '@id': 'https://mouhibfahem.vercel.app/#person',
+      },
+    },
+    {
+      '@type': 'Person',
+      '@id': 'https://mouhibfahem.vercel.app/#person',
+      'name': 'Mouhib Fahem',
+      'url': 'https://mouhibfahem.vercel.app',
+      'image': 'https://mouhibfahem.vercel.app/mouhib.jpg',
+      'sameAs': [
+        'https://www.linkedin.com/in/mouhib-fahem-17a1b4342/',
+        'https://github.com/mouhibfahem',
+      ],
+      'jobTitle': 'Élève Ingénieur en Génie Informatique',
+      'description': 'Élève ingénieur en Classe Terminale de Génie Informatique à l\'ENICarthage, développeur logiciel full-stack et réseaux CCNA.',
+      'affiliation': {
+        '@type': 'EducationalOrganization',
+        'name': 'ENICarthage (École Nationale d\'Ingénieurs de Carthage)',
+      },
+      'alumniOf': [
+        {
+          '@type': 'EducationalOrganization',
+          'name': 'École Nationale d\'Ingénieurs de Carthage (ENICarthage)',
+          'url': 'https://enicarthage.rnu.tn',
+        },
+        {
+          '@type': 'EducationalOrganization',
+          'name': 'Faculté des Sciences de Monastir (FSM)',
+        },
+      ],
+      'memberOf': [
+        {
+          '@type': 'Organization',
+          'name': 'Délégué Général des Étudiants de l\'ENICarthage',
+        },
+        {
+          '@type': 'Organization',
+          'name': 'Microsoft Tech Club ENICarthage',
+        },
+      ],
+      'knowsAbout': [
+        'Software Engineering',
+        'Génie Informatique',
+        'Full-Stack Web Development',
+        'Next.js',
+        'React',
+        'Node.js',
+        'Express.js',
+        'Spring Boot 3',
+        'Prisma ORM',
+        'PostgreSQL',
+        'Sage 100 SaaS Migration',
+        'Cisco CCNA Networking',
+      ],
+      'email': 'mailto:mouhib.fahem28@gmail.com',
+    },
+    {
+      '@type': 'WebApplication',
+      '@id': 'https://mouhibfahem.vercel.app/#sage100',
+      'name': 'Plateforme SaaS Sage 100 Web',
+      'applicationCategory': 'BusinessApplication',
+      'operatingSystem': 'Web Browser',
+      'author': {
+        '@id': 'https://mouhibfahem.vercel.app/#person',
+      },
+    },
+    {
+      '@type': 'WebApplication',
+      '@id': 'https://mouhibfahem.vercel.app/#scoutini',
+      'name': 'Scoutini Platform',
+      'applicationCategory': 'SportsApplication',
+      'operatingSystem': 'Web Browser',
+      'author': {
+        '@id': 'https://mouhibfahem.vercel.app/#person',
+      },
+    },
+    {
+      '@type': 'WebApplication',
+      '@id': 'https://enigov.tn',
+      'name': 'EniGov',
+      'url': 'https://enigov.tn',
+      'applicationCategory': 'GovernanceApplication',
+      'operatingSystem': 'Web Browser',
+      'author': {
+        '@id': 'https://mouhibfahem.vercel.app/#person',
+      },
+    },
   ],
-  jobTitle: 'Élève Ingénieur en Génie Informatique',
-  worksFor: {
-    '@type': 'EducationalOrganization',
-    name: 'ENICarthage (École Nationale d\'Ingénieurs de Carthage)',
-  },
-  alumniOf: {
-    '@type': 'EducationalOrganization',
-    name: 'ENICarthage',
-  },
-  knowsAbout: [
-    'Software Engineering',
-    'Génie Informatique',
-    'Full-Stack Web Development',
-    'Next.js',
-    'React',
-    'Node.js',
-    'Express.js',
-    'Spring Boot 3',
-    'Prisma ORM',
-    'PostgreSQL',
-    'Sage 100 SaaS Migration',
-    'Cisco CCNA Networking',
-  ],
-  email: 'mailto:mouhib.fahem28@gmail.com',
 };
 
 export default function RootLayout({
@@ -135,11 +202,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="512x512" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredDataGraph) }}
         />
       </head>
       <body className="antialiased bg-[#070709] text-gray-100 min-h-screen selection:bg-gold-400/30 selection:text-white">
