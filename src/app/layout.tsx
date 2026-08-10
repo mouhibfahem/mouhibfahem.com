@@ -66,6 +66,9 @@ export const metadata: Metadata = {
     title: 'Mouhib Fahem — Élève Ingénieur en Génie Informatique',
     description: 'Portfolio professionnel de Mouhib Fahem - ENICarthage Classe Terminale GI',
   },
+  verification: {
+    google: 'googlebab2c3d5191a4480',
+  },
 };
 
 export default function RootLayout({
