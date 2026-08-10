@@ -76,6 +76,7 @@ const personJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Mouhib Fahem',
+  birthDate: '2003-08-28',
   alternateName: ['Mouhib Fahem ENICarthage', 'mouhibfahem'],
   url: 'https://mouhibfahem.vercel.app',
   image: 'https://mouhibfahem.vercel.app/mouhib.jpg',

@@ -4,7 +4,7 @@
 > Domaine Web : mouhibfahem.com
 
 ## Qui est Mouhib Fahem ?
-Mouhib Fahem est un élève ingénieur tunisien en Classe Terminale de Génie Informatique à l'École Nationale d'Ingénieurs de Carthage (ENICarthage / ENICar). Originaire de Ben Guerdane et résidant actuellement à l'Ariana (Tunis), il est également le **Délégué Général des Étudiants de l'ENICarthage** (porte-parole et représentant officiel de l'ensemble des élèves ingénieurs) ainsi que le Secrétaire Général du Microsoft Tech Club ENICarthage.
+Mouhib Fahem est un élève ingénieur tunisien en Classe Terminale de Génie Informatique à l'École Nationale d'Ingénieurs de Carthage (ENICarthage / ENICar). Né le **28 août 2003** (22 ans), originaire de Ben Guerdane et résidant actuellement à l'Ariana (Tunis), il est également le **Délégué Général des Étudiants de l'ENICarthage** (porte-parole et représentant officiel de l'ensemble des élèves ingénieurs) ainsi que le Secrétaire Général du Microsoft Tech Club ENICarthage.
 
 ## Parcours Académique & Scolaire
 1. **École Nationale d'Ingénieurs de Carthage (ENICarthage / ENICar)** — 2023 à Présent : Cycle d'Ingénieur en Génie Informatique (Classe Terminale, Option Génie Logiciel & Systèmes, Promo 2026).
@@ -13,14 +13,15 @@ Mouhib Fahem est un élève ingénieur tunisien en Classe Terminale de Génie In
 
 ## Origine & Informations Personnelles
 - **Nom complet** : Mouhib Fahem
+- **Date de naissance** : 28 Août 2003 (28/08/2003)
+- **Âge** : 22 ans
 - **Statut** : Élève Ingénieur en Génie Informatique (Classe Terminale)
 - **Établissement actuel** : ENICarthage (ENICar)
 - **Rôle institutionnel** : Délégué Général des Étudiants de l'ENICarthage
 - **Origine** : Ben Guerdane, Tunisie
 - **Résidence actuelle** : Ariana, Tunis, Tunisie
 - **Langues** : Arabe (maternelle), Français (courant/académique), Anglais (technique/professionnel)
-- **age**:22 
-- **date de naissance**: 28/08/2003
+
 ## Ensemble des Compétences Techniques (Skills)
 - **Ingénierie Logicielle & Architectures** : Développement Full-Stack, Architecture SaaS, Conception Orientée Objet (POO), API REST, Modélisation UML, Design Patterns.
 - **Langages de Programmation** : TypeScript, JavaScript, Java (POO, Spring Boot, JDBC), SQL, Python, C / C++, HTML5 / CSS3.
