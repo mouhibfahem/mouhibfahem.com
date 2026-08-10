@@ -62,6 +62,9 @@ export default function AboutSection() {
                   <Building2 className="w-4 h-4 text-gold-400" />
                   <span>ENICarthage • Promo 2026</span>
                 </div>
+                <div className="text-xs text-gold-300 font-medium pt-1 border-t border-gold-400/10 flex items-center gap-1.5 justify-center sm:justify-start">
+                  <span>🎂 Né le {personalData.birthDate} ({personalData.age})</span>
+                </div>
               </div>
             </div>
           </motion.div>

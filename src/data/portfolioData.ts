@@ -60,6 +60,8 @@ export interface TechLogo {
 
 export const personalData = {
   name: "Mouhib Fahem",
+  birthDate: "28 Août 2003",
+  age: "23 ans",
   title: "Élève Ingénieur en Génie Informatique",
   grade: "Classe Terminale (Dernière année du cycle d'ingénieur)",
   subtitle: "Classe Terminale du Cycle d'Ingénieur • Promo 2026",
@@ -83,7 +85,7 @@ export const personalData = {
     "Réseaux CCNA Cisco",
     "Docker & DevOps Workflows"
   ],
-  bio: "Originaire de Ben Guerdane et résidant à l'Ariana (Tunis), Mouhib Fahem est élève ingénieur en Classe Terminale de Génie Informatique à l'ENICarthage (ENICar), ainsi que le Délégué Général des Étudiants de l'école. Après un baccalauréat mathématiques au Lycée Ben Guerdane et un cycle préparatoire scientifique (MP) à la Faculté des Sciences de Monastir (FSM), il s'est spécialisé en génie logiciel moderne (Next.js, React, Node.js, Spring Boot, PostgreSQL, Docker, Réseaux CCNA).",
+  bio: "Né le 28 août 2003 (22 ans), originaire de Ben Guerdane et résidant à l'Ariana (Tunis), Mouhib Fahem est élève ingénieur en Classe Terminale de Génie Informatique à l'ENICarthage (ENICar), ainsi que le Délégué Général des Étudiants de l'école. Après un baccalauréat mathématiques au Lycée Ben Guerdane et un cycle préparatoire scientifique (MP) à la Faculté des Sciences de Monastir (FSM), il s'est spécialisé en génie logiciel moderne (Next.js, React, Node.js, Spring Boot, PostgreSQL, Docker, Réseaux CCNA).",
   highlights: [
     { label: "Formation Ingénieur", value: "Classe Terminale", description: "ENICarthage (Promo 2026)" },
     { label: "Dernier Stage", value: "Note 19/20", description: "Clickovate — SaaS Sage 100" },
