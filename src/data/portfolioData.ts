@@ -67,7 +67,7 @@ export const personalData = {
   domain: "mouhibfahem.com",
   email: "mouhib.fahem28@gmail.com",
   phone: "+216 24 640 474",
-  location: "Tunis, Tunisie",
+  location: "Ariana, Tunis, Tunisie (Originaire de Ben Guerdane)",
   linkedin: "https://www.linkedin.com/in/mouhib-fahem-17a1b4342/",
   linkedinDisplay: "linkedin.com/in/mouhib-fahem",
   github: "https://github.com/mouhibfahem",
@@ -75,6 +75,7 @@ export const personalData = {
   status: "Option Génie Informatique — ENICarthage",
   currentFocus: "Architectures Full-Stack (Next.js / Node.js / Spring Boot 3), Microservices & Ingénierie Réseau CCNA",
   specializationPills: [
+    "Délégué Général ENICarthage",
     "Next.js & Node.js Full-Stack",
     "Java & Spring Boot 3",
     "Prisma ORM & PostgreSQL",
@@ -82,7 +83,7 @@ export const personalData = {
     "Réseaux CCNA Cisco",
     "Docker & DevOps Workflows"
   ],
-  bio: "Élève Ingénieur en Classe Terminale de Génie Informatique à l'ENICarthage, spécialisé en ingénierie logicielle, développement full-stack (Next.js, Node.js, Spring Boot) et architectures système. Fort de réalisations concrètes en entreprise — comme la migration du logiciel Sage 100 vers une plateforme SaaS en ligne lors de mon stage chez Clickovate (évalué 19/20) —, je maîtrise l'ensemble de la chaîne de valeur du développement logiciel, de la modélisation UML/base de données au déploiement sécurisé.",
+  bio: "Originaire de Ben Guerdane et résidant à l'Ariana (Tunis), Mouhib Fahem est élève ingénieur en Classe Terminale de Génie Informatique à l'ENICarthage (ENICar), ainsi que le Délégué Général des Étudiants de l'école. Après un baccalauréat mathématiques au Lycée Ben Guerdane et un cycle préparatoire scientifique (MP) à la Faculté des Sciences de Monastir (FSM), il s'est spécialisé en génie logiciel moderne (Next.js, React, Node.js, Spring Boot, PostgreSQL, Docker, Réseaux CCNA).",
   highlights: [
     { label: "Formation Ingénieur", value: "Classe Terminale", description: "ENICarthage (Promo 2026)" },
     { label: "Dernier Stage", value: "Note 19/20", description: "Clickovate — SaaS Sage 100" },
