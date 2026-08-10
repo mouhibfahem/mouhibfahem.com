@@ -33,13 +33,14 @@ export const metadata: Metadata = {
     'Sage 100 SaaS',
     'Clickovate',
     'EniGov',
+    'Scoutini Platform',
     'BengoDelivery',
     'CCNA',
     'Portfolio'
   ],
-  authors: [{ name: 'Mouhib Fahem', url: 'https://mouhibfahem.com' }],
+  authors: [{ name: 'Mouhib Fahem', url: 'https://mouhibfahem.vercel.app' }],
   creator: 'Mouhib Fahem',
-  metadataBase: new URL('https://mouhibfahem.com'),
+  metadataBase: new URL('https://mouhibfahem.vercel.app'),
   alternates: {
     canonical: '/',
   },
@@ -55,8 +56,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Mouhib Fahem — Élève Ingénieur en Génie Informatique (Classe Terminale)',
-    description: 'Élève ingénieur GI à l\'ENICarthage. Découvrez mes projets (SaaS Sage 100, EniGov, BengoDelivery), compétences et stages.',
-    url: 'https://mouhibfahem.com',
+    description: 'Élève ingénieur GI à l\'ENICarthage. Découvrez mes projets (SaaS Sage 100, Scoutini, EniGov, BengoDelivery), compétences et stages.',
+    url: 'https://mouhibfahem.vercel.app',
     siteName: 'Mouhib Fahem Portfolio',
     locale: 'fr_FR',
     type: 'website',
@@ -71,6 +72,43 @@ export const metadata: Metadata = {
   },
 };
 
+const personJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Mouhib Fahem',
+  alternateName: ['Mouhib Fahem ENICarthage', 'mouhibfahem'],
+  url: 'https://mouhibfahem.vercel.app',
+  image: 'https://mouhibfahem.vercel.app/mouhib.jpg',
+  sameAs: [
+    'https://www.linkedin.com/in/mouhib-fahem-17a1b4342/',
+    'https://github.com/mouhibfahem',
+  ],
+  jobTitle: 'Élève Ingénieur en Génie Informatique',
+  worksFor: {
+    '@type': 'EducationalOrganization',
+    name: 'ENICarthage (École Nationale d\'Ingénieurs de Carthage)',
+  },
+  alumniOf: {
+    '@type': 'EducationalOrganization',
+    name: 'ENICarthage',
+  },
+  knowsAbout: [
+    'Software Engineering',
+    'Génie Informatique',
+    'Full-Stack Web Development',
+    'Next.js',
+    'React',
+    'Node.js',
+    'Express.js',
+    'Spring Boot 3',
+    'Prisma ORM',
+    'PostgreSQL',
+    'Sage 100 SaaS Migration',
+    'Cisco CCNA Networking',
+  ],
+  email: 'mailto:mouhib.fahem28@gmail.com',
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -78,6 +116,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className={`${playfair.variable} ${jakarta.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
+      </head>
       <body className="antialiased bg-[#070709] text-gray-100 min-h-screen selection:bg-gold-400/30 selection:text-white">
         {children}
       </body>

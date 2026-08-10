@@ -1,0 +1,35 @@
+# Mouhib Fahem — Élève Ingénieur en Génie Informatique
+
+> Portfolio Officiel : https://mouhibfahem.vercel.app
+> Domaine Web : mouhibfahem.com
+
+## Résumé Professionnel
+Mouhib Fahem est un élève ingénieur en Classe Terminale de Génie Informatique à l'École Nationale d'Ingénieurs de Carthage (ENICarthage), promotion 2026. Il est spécialisé en ingénierie logicielle, développement full-stack (Next.js, React, Node.js, Express, Spring Boot 3) et réseaux informatiques (CCNA Cisco).
+
+## Éducation & Formation
+- **ENICarthage (École Nationale d'Ingénieurs de Carthage)** : Diplôme d'Ingénieur en Génie Informatique (Classe Terminale — 2023 à Présent).
+- **Faculté des Sciences de Monastir** : Cycle Préparatoire aux Études d'Ingénieurs (Math-Physique — 2021 à 2023).
+- **Lycée Ben Guerdane** : Baccalauréat Mathématiques (Mention Bien — 2021).
+
+## Expériences Professionnelles & Stages
+- **Clickovate (Juin 2026 – Août 2026)** : Stagiaire Développeur Full-Stack (Note 19/20 — Mention Excellente). Migration complète du logiciel desktop Sage 100 Comptabilité vers une plateforme SaaS en ligne (Node.js, Express, Prisma ORM, PostgreSQL, Next.js, Tailwind CSS, plan comptable tunisien).
+- **Tunisie Telecom (Juillet 2025)** : Stagiaire Ingénieur Réseau (Dérangements réseaux d'entreprise, SIG/GIS, fibre optique).
+
+## Projets Majeurs
+1. **Plateforme SaaS Sage 100 Web** : Migration SaaS de comptabilité multi-dossiers (Node.js, Express, Prisma, PostgreSQL, Next.js).
+2. **Scoutini Platform** : Plateforme de détection & recrutement de talents footballistiques en Tunisie (React, Vite, Node.js, Express, Prisma ORM, PostgreSQL, cartes FIFA-like).
+3. **EniGov (enigov.tn)** : Plateforme web de gouvernance et sondages étudiants pour l'ENICarthage.
+4. **BengoDelivery** : Architecture 3-Tiers (Android Java, API REST Spring Boot 3, Oracle DB, notifications Firebase FCM).
+
+## Compétences Techniques
+- **Langages** : TypeScript, JavaScript, Java (POO/Spring), SQL, Python, C/C++.
+- **Frameworks & Web** : Next.js, React, Node.js, Express, Spring Boot 3, Prisma ORM, Tailwind CSS.
+- **Bases de données** : PostgreSQL, Oracle DB, MySQL, MongoDB.
+- **Réseaux & DevOps** : Cisco CCNA (Switching, Routing, OSPF, VLANs), Docker, Git/GitHub.
+
+## Certifications & Profils Sociaux
+- **Cisco CCNA** : Cisco Networking Academy ENICarthage.
+- **GitHub Certification** : DevOps & Versioning.
+- **LinkedIn** : https://www.linkedin.com/in/mouhib-fahem-17a1b4342/
+- **GitHub** : https://github.com/mouhibfahem
+- **Email** : mouhib.fahem28@gmail.com
