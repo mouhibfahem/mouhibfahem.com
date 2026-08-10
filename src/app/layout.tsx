@@ -20,7 +20,11 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: 'Mouhib Fahem — Élève Ingénieur en Génie Informatique | ENICarthage',
-  description: 'Portfolio officiel de Mouhib Fahem, élève ingénieur en Génie Informatique à l\'ENICarthage (Classe Terminale). Spécialisé en ingénierie logicielle, Java, Spring Boot, Next.js & Réseaux CCNA.',
+  description: 'Né le 28 août 2003 (23 ans), originaire de Ben Guerdane et résidant à l\'Ariana (Tunis), Mouhib Fahem est élève ingénieur en Classe Terminale de Génie Informatique à l\'ENICarthage. Délégué Général des Étudiants.',
+  applicationName: 'Mouhib Fahem',
+  appleWebApp: {
+    title: 'Mouhib Fahem',
+  },
   keywords: [
     'Mouhib Fahem',
     'ENICarthage',
@@ -46,30 +50,38 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico' },
-      { url: '/favicon.png', type: 'image/png' },
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.png', type: 'image/png', sizes: '512x512' },
     ],
     shortcut: ['/favicon.png'],
     apple: [
-      { url: '/apple-touch-icon.png' },
+      { url: '/apple-touch-icon.png', sizes: '512x512' },
     ],
   },
   openGraph: {
     title: 'Mouhib Fahem — Élève Ingénieur en Génie Informatique (Classe Terminale)',
-    description: 'Élève ingénieur GI à l\'ENICarthage. Découvrez mes projets (SaaS Sage 100, Scoutini, EniGov, BengoDelivery), compétences et stages.',
+    description: 'Né le 28 août 2003 (23 ans). Élève ingénieur GI à l\'ENICarthage & Délégué Général des Étudiants. Découvrez mes projets, compétences et stages.',
     url: 'https://mouhibfahem.vercel.app',
-    siteName: 'Mouhib Fahem Portfolio',
+    siteName: 'Mouhib Fahem',
     locale: 'fr_FR',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Mouhib Fahem — Élève Ingénieur en Génie Informatique',
-    description: 'Portfolio professionnel de Mouhib Fahem - ENICarthage Classe Terminale GI',
+    description: 'Portfolio officiel de Mouhib Fahem - ENICarthage Classe Terminale GI',
   },
   verification: {
     google: 'gJY-TGj-kIJy4LV73IgKzwO1MEKwVa1OXerpP52piBY',
   },
+};
+
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Mouhib Fahem',
+  alternateName: ['Mouhib Fahem Portfolio', 'Mouhib Fahem ENICarthage'],
+  url: 'https://mouhibfahem.vercel.app',
 };
 
 const personJsonLd = {
@@ -118,6 +130,13 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${playfair.variable} ${jakarta.variable}`}>
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.png" type="image/png" sizes="512x512" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="512x512" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
