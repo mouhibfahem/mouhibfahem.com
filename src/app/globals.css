@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 8 8 10;
+    --foreground: 243 244 246;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #070709;
+    color: #f3f4f6;
+    font-family: var(--font-jakarta), sans-serif;
+    overflow-x: hidden;
+    selection-background-color: rgba(201, 169, 97, 0.3);
+    selection-color: #ffffff;
+  }
+
+  /* Custom Gold Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #09090c;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(201, 169, 97, 0.25);
+    border-radius: 4px;
+    border: 1px solid rgba(201, 169, 97, 0.1);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(201, 169, 97, 0.5);
+  }
+}
+
+@layer components {
+  /* Golden Text Gradient */
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #FFF1D0 0%, #E6C687 35%, #C9A961 70%, #997632 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-silver-gradient {
+    background: linear-gradient(135deg, #FFFFFF 0%, #D1D5DB 60%, #9CA3AF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Glassmorphism Cards */
+  .glass-card {
+    background: rgba(18, 18, 24, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(201, 169, 97, 0.12);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .glass-card:hover {
+    border-color: rgba(201, 169, 97, 0.35);
+    box-shadow: 0 10px 30px -10px rgba(201, 169, 97, 0.15);
+    transform: translateY(-2px);
+  }
+
+  .glass-pill {
+    background: rgba(201, 169, 97, 0.06);
+    border: 1px solid rgba(201, 169, 97, 0.18);
+    backdrop-filter: blur(8px);
+  }
+}
+
+/* Animations */
+@keyframes goldPulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.05); }
+}
+
+.animate-gold-pulse {
+  animation: goldPulse 4s ease-in-out infinite;
+}
+
+/* Tech Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-33.333%); }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
