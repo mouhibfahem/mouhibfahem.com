@@ -45,7 +45,7 @@ export default function AboutSection() {
             <div className="glass-card rounded-2xl p-4 border border-gold-400/30 relative overflow-hidden group">
               <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden border border-gold-400/20 mb-4">
                 <img
-                  src="/mouhib.jpg"
+                  src="/mouhibfh.jpg"
                   alt="Mouhib Fahem - Élève Ingénieur ENICarthage"
                   className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-500"
                 />
