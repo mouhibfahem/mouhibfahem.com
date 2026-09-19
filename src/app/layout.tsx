@@ -83,9 +83,9 @@ const structuredDataGraph = {
     {
       '@type': 'WebSite',
       '@id': 'https://mouhibfahem.vercel.app/#website',
-      'url': 'https://mouhibfahem.vercel.app',
+      'url': 'https://mouhibfahem.vercel.app/',
       'name': 'Mouhib Fahem',
-      'alternateName': ['Mouhib Fahem Portfolio', 'Mouhib Fahem ENICarthage'],
+      'alternateName': ['Mouhib Fahem', 'Mouhib Fahem Portfolio', 'Mouhib Fahem ENICarthage', 'mouhibfahem'],
       'publisher': {
         '@id': 'https://mouhibfahem.vercel.app/#person',
       },
