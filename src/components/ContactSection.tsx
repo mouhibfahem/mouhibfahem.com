@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, Linkedin, MapPin, Copy, Check, Send, Download, ArrowUpRight, Globe } from 'lucide-react';
+import { Mail, Phone, Linkedin, MapPin, Copy, Check, Send, Download, ArrowUpRight, Globe, Sparkles } from 'lucide-react';
 import { personalData } from '@/data/portfolioData';
 
 export default function ContactSection() {
@@ -58,6 +58,17 @@ export default function ContactSection() {
           <p className="text-gray-400 text-xs sm:text-base mt-3">
             Pour toute proposition de collaboration, opportunité d'ingénierie ou projet, contactez-moi directement.
           </p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+            className="inline-flex items-center gap-2 px-4 py-2.5 mt-5 rounded-xl glass-card border border-gold-400/35 bg-gold-400/10 text-gold-200 text-xs sm:text-sm font-medium shadow-gold-sm"
+          >
+            <Sparkles className="w-4 h-4 text-gold-400 shrink-0 animate-pulse" />
+            <span>Recherche un stage PFE — à partir de février 2027, 4 mois minimum, en présentiel</span>
+          </motion.div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-start">

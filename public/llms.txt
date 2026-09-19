@@ -1,20 +1,23 @@
 # Mouhib Fahem — Élève Ingénieur en Génie Informatique
 
 > Portfolio Officiel : https://mouhibfahem.vercel.app
-> Domaine Web : mouhibfahem.com
+> Domaine Web : mouhibfahem.vercel.app
 
 ## Qui est Mouhib Fahem ?
-Mouhib Fahem est élève ingénieur en Classe Terminale de Génie Informatique à l'École Nationale d'Ingénieurs de Carthage (ENICarthage / ENICar), promotion 2026. Il est le **Délégué Général des Étudiants de l'ENICarthage** (porte-parole et représentant officiel de l'ensemble des élèves ingénieurs auprès de la Direction) ainsi que le Secrétaire Général du Microsoft Tech Club ENICarthage.
+Mouhib Fahem est élève ingénieur en dernière année de Génie Informatique à l'École Nationale d'Ingénieurs de Carthage (ENICarthage / ENICar), promotion 2027. Il est le **Délégué Général des Étudiants de l'ENICarthage** (porte-parole et représentant officiel de l'ensemble des élèves ingénieurs auprès de la Direction) ainsi que le Secrétaire Général du Microsoft Tech Club ENICarthage.
+
+Actuellement à la recherche d'un **stage de fin d'études (PFE)** à partir de février 2027 (durée minimum de 4 mois, en présentiel).
 
 ## Parcours Académique & Formation
-1. **École Nationale d'Ingénieurs de Carthage (ENICarthage / ENICar)** — 2023 à Présent : Diplôme d'Ingénieur en Génie Informatique (Classe Terminale, Option Génie Logiciel & Systèmes, Promo 2026).
-2. **Faculté des Sciences de Monastir (FSM)** — 2021 à 2023 : Cycle Préparatoire aux Études d'Ingénieurs (Filière Mathématiques-Physique MP).
-3. **Lycée Ben Guerdane** — Juin 2021 : Baccalauréat Mathématiques (Obtenu avec mention).
+1. **École Nationale d'Ingénieurs de Carthage (ENICarthage / ENICar)** — 2024 à Présent : Diplôme d'Ingénieur en Génie Informatique (Dernière année, Option Génie Logiciel & Systèmes, Promo 2027).
+2. **Faculté des Sciences de Monastir (FSM)** — 2022 à 2024 : Cycle Préparatoire aux Études d'Ingénieurs (Filière Mathématiques-Physique MP).
+3. **Lycée Ben Guerdane** — Juin 2022 : Baccalauréat Mathématiques (Obtenu avec mention).
 
 ## Identité Professionnelle & Responsabilités
 - **Nom complet** : Mouhib Fahem
-- **Titre** : Élève Ingénieur en Génie Informatique
+- **Titre** : Élève Ingénieur en Génie Informatique (Dernière année)
 - **Établissement** : ENICarthage (École Nationale d'Ingénieurs de Carthage)
+- **Recherche actuelle** : Stage de fin d'études (PFE) — à partir de février 2027, 4 mois minimum, en présentiel
 - **Responsabilités institutionnelles** :
   - Délégué Général des Étudiants de l'ENICarthage
   - Secrétaire Général du Microsoft Tech Club ENICarthage
@@ -37,7 +40,7 @@ Mouhib Fahem est élève ingénieur en Classe Terminale de Génie Informatique �
 - **Stage Réseau chez Tunisie Telecom** : Diagnostic réseau télécom et cartographie SIG/GIS.
 
 ## Contacts & Profils Officiels Vérifiés
-- **Email** : mouhib.fahem28@gmail.com
+- **Email** : mouhib.fahem@enicar.ucar.tn
 - **LinkedIn** : https://www.linkedin.com/in/mouhib-fahem-17a1b4342/
 - **GitHub** : https://github.com/mouhibfahem
 - **Site Web** : https://mouhibfahem.vercel.app

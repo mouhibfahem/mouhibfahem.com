@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: 'Mouhib Fahem — Élève Ingénieur en Génie Informatique | ENICarthage',
-  description: 'Portfolio officiel de Mouhib Fahem, élève ingénieur en Génie Informatique à l\'ENICarthage (Classe Terminale) et Délégué Général des Étudiants. Spécialisé en ingénierie logicielle, Java, Spring Boot 3, Next.js & Réseaux CCNA.',
+  description: 'Portfolio officiel de Mouhib Fahem, élève ingénieur en Génie Informatique à l\'ENICarthage (Dernière année) et Délégué Général des Étudiants. Spécialisé en ingénierie logicielle, Java, Spring Boot 3, Next.js & Réseaux CCNA.',
   applicationName: 'Mouhib Fahem',
   appleWebApp: {
     title: 'Mouhib Fahem',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     'Mouhib Fahem',
     'ENICarthage',
     'Ingénieur Informatique',
-    'Génie Informatique Classe Terminale',
+    'Génie Informatique Dernière Année',
     'Tunisie',
     'Java',
     'Spring Boot 3',
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: 'Mouhib Fahem — Élève Ingénieur en Génie Informatique (Classe Terminale)',
+    title: 'Mouhib Fahem — Élève Ingénieur en Génie Informatique (Dernière année)',
     description: 'Portfolio officiel de Mouhib Fahem — Élève ingénieur GI à l\'ENICarthage & Délégué Général des Étudiants. Découvrez mes projets, compétences et stages.',
     url: 'https://mouhibfahem.vercel.app',
     siteName: 'Mouhib Fahem',
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Mouhib Fahem — Élève Ingénieur en Génie Informatique',
-    description: 'Portfolio officiel de Mouhib Fahem - ENICarthage Classe Terminale GI',
+    description: 'Portfolio officiel de Mouhib Fahem - ENICarthage Dernière année GI',
   },
   verification: {
     google: 'gJY-TGj-kIJy4LV73IgKzwO1MEKwVa1OXerpP52piBY',
@@ -107,13 +107,13 @@ const structuredDataGraph = {
       '@id': 'https://mouhibfahem.vercel.app/#person',
       'name': 'Mouhib Fahem',
       'url': 'https://mouhibfahem.vercel.app',
-      'image': 'https://mouhibfahem.vercel.app/mouhib.jpg',
+      'image': 'https://mouhibfahem.vercel.app/mouhibfh.jpg',
       'sameAs': [
         'https://www.linkedin.com/in/mouhib-fahem-17a1b4342/',
         'https://github.com/mouhibfahem',
       ],
       'jobTitle': 'Élève Ingénieur en Génie Informatique',
-      'description': 'Élève ingénieur en Classe Terminale de Génie Informatique à l\'ENICarthage, développeur logiciel full-stack et réseaux CCNA.',
+      'description': 'Élève ingénieur en dernière année de Génie Informatique à l\'ENICarthage, développeur logiciel full-stack et réseaux CCNA.',
       'affiliation': {
         '@type': 'EducationalOrganization',
         'name': 'ENICarthage (École Nationale d\'Ingénieurs de Carthage)',
@@ -153,7 +153,7 @@ const structuredDataGraph = {
         'Sage 100 SaaS Migration',
         'Cisco CCNA Networking',
       ],
-      'email': 'mailto:mouhib.fahem28@gmail.com',
+      'email': 'mailto:mouhib.fahem@enicar.ucar.tn',
     },
     {
       '@type': 'WebApplication',

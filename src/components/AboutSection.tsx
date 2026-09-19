@@ -56,11 +56,11 @@ export default function AboutSection() {
                 <div className="text-lg font-serif font-bold text-white">Mouhib Fahem</div>
                 <div className="text-xs font-medium text-gold-300 flex items-center gap-1.5 justify-center sm:justify-start">
                   <GraduationCap className="w-4 h-4 text-gold-400" />
-                  <span>Élève Ingénieur en Génie Informatique (Classe Terminale)</span>
+                  <span>Élève Ingénieur en Génie Informatique (Dernière année)</span>
                 </div>
                 <div className="text-xs text-gray-400 flex items-center gap-1.5 justify-center sm:justify-start">
                   <Building2 className="w-4 h-4 text-gold-400" />
-                  <span>ENICarthage • Promo 2026</span>
+                  <span>ENICarthage • Promo 2027</span>
                 </div>
               </div>
             </div>

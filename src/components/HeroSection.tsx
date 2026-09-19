@@ -28,7 +28,7 @@ export default function HeroSection() {
             >
               <span className="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full glass-pill border border-gold-400/30 text-[11px] sm:text-xs font-semibold text-gold-300 shadow-gold-sm flex items-center gap-1.5 max-w-full truncate">
                 <GraduationCap className="w-3.5 h-3.5 text-gold-400 shrink-0" />
-                <span className="truncate">CLASSE TERMINALE — GÉNIE INFORMATIQUE</span>
+                <span className="truncate">DERNIÈRE ANNÉE — GÉNIE INFORMATIQUE</span>
               </span>
               <span className="px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full glass-pill border border-white/10 text-[11px] sm:text-xs font-medium text-gray-300">
                 ENICarthage
@@ -50,17 +50,28 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="space-y-1.5 sm:space-y-2 mb-6"
+              className="space-y-1.5 sm:space-y-2 mb-5"
             >
               <h2 className="text-lg sm:text-2xl md:text-3xl font-light text-gray-200">
                 {personalData.title}
               </h2>
               <p className="text-base sm:text-xl md:text-2xl text-gold-400 font-semibold">
-                Classe Terminale — Cycle d'Ingénieur
+                Dernière année — Cycle d'Ingénieur
               </p>
               <p className="text-xs sm:text-base md:text-lg text-gold-400/90 font-medium tracking-wide">
                 {personalData.subtitle}
               </p>
+            </motion.div>
+
+            {/* Discrete PFE Banner */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.22 }}
+              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl glass-card border border-gold-400/35 bg-gold-400/10 text-gold-200 text-xs sm:text-sm font-medium mb-6 text-left shadow-gold-sm max-w-2xl mx-auto lg:mx-0"
+            >
+              <Sparkles className="w-4 h-4 text-gold-400 shrink-0 animate-pulse" />
+              <span>Recherche un stage PFE — à partir de février 2027, 4 mois minimum, en présentiel</span>
             </motion.div>
 
             {/* Current Focus Highlight Box */}
@@ -184,10 +195,10 @@ export default function HeroSection() {
                 <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 z-20 glass-card p-2.5 sm:p-3.5 rounded-xl border border-gold-400/40 flex items-center justify-between backdrop-blur-xl">
                   <div>
                     <h4 className="text-[11px] sm:text-xs font-serif font-bold text-white">Mouhib Fahem</h4>
-                    <p className="text-[9px] sm:text-[10px] text-gold-300">Classe Terminale GI @ ENICarthage</p>
+                    <p className="text-[9px] sm:text-[10px] text-gold-300">Dernière année GI @ ENICarthage</p>
                   </div>
                   <span className="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[8px] sm:text-[9px] font-bold uppercase tracking-wider bg-gold-400/20 text-gold-300 border border-gold-400/40">
-                    Promo 2026
+                    Promo 2027
                   </span>
                 </div>
               </div>
