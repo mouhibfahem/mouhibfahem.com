@@ -45,6 +45,9 @@ export interface Certification {
   date: string;
   badgeText: string;
   description: string;
+  image?: string;
+  verifyUrl?: string;
+  featured?: boolean;
 }
 
 export interface Language {
@@ -71,9 +74,11 @@ export const personalData = {
   linkedin: "https://www.linkedin.com/in/mouhib-fahem-17a1b4342/",
   linkedinDisplay: "linkedin.com/in/mouhib-fahem",
   github: "https://github.com/mouhibfahem",
+  credly: "https://www.credly.com/users/mouhib-fahem",
+  availability: "Recherche un stage PFE — à partir de février 2027, 4 mois minimum, en présentiel",
   cvPath: "/CV_Mouhib_Fahem.pdf",
   status: "Option Génie Informatique — ENICarthage",
-  currentFocus: "Architectures Full-Stack (Next.js / Node.js / Spring Boot 3), Microservices & Ingénierie Réseau CCNA",
+  currentFocus: "Développement Full-Stack (Next.js · React · Node.js · Prisma · PostgreSQL · Spring Boot), Cloud AWS & Réseaux CCNA",
   specializationPills: [
     "Délégué Général ENICarthage",
     "Next.js & Node.js Full-Stack",
@@ -81,14 +86,15 @@ export const personalData = {
     "Prisma ORM & PostgreSQL",
     "Migration SaaS & Sage 100",
     "Réseaux CCNA Cisco",
+    "AWS Cloud Foundations",
     "Docker & DevOps Workflows"
   ],
-  bio: "Mouhib Fahem est élève ingénieur en dernière année de Génie Informatique à l'ENICarthage (ENICar) et Délégué Général des Étudiants de l'école. Issu d'un cycle préparatoire scientifique (MP) à la Faculté des Sciences de Monastir (FSM), il s'est spécialisé en génie logiciel moderne (Next.js, React, Node.js, Spring Boot 3, PostgreSQL, Docker, Réseaux CCNA). Fort de réalisations concrètes en entreprise — comme la migration du logiciel Sage 100 vers une plateforme SaaS en ligne lors de son stage chez Clickovate (évalué 19/20) —, il maîtrise l'ensemble de la chaîne de valeur du développement logiciel.",
+  bio: "Mouhib Fahem est élève ingénieur en dernière année de Génie Informatique à l'ENICarthage (ENICar) et Délégué Général des Étudiants de l'école. Issu d'un cycle préparatoire scientifique (MP) à la Faculté des Sciences de Monastir (FSM), il s'est spécialisé en génie logiciel moderne (Next.js, React, Node.js, Spring Boot 3, PostgreSQL, Docker, Réseaux CCNA). Fort de réalisations concrètes en entreprise — comme la migration du logiciel Sage 100 vers une plateforme SaaS en ligne lors de son stage chez Clickovate (évalué 19/20) —, il maîtrise l'ensemble de la chaîne de valeur du développement logiciel. Il est certifié CCNA (Switching, Routing & Wireless Essentials) et AWS Academy Cloud Foundations, et recherche un stage de fin d'études (PFE) à partir de février 2027.",
   highlights: [
     { label: "Formation Ingénieur", value: "Dernière année", description: "ENICarthage (Promo 2027)" },
     { label: "Dernier Stage", value: "Note 19/20", description: "Clickovate — SaaS Sage 100" },
-    { label: "Certifications", value: "CCNA & GitHub", description: "Cisco & DevOps Certifié" },
-    { label: "Leadership", value: "Délégué Général", description: "Et Secrétaire Général MTC" },
+    { label: "Certifications", value: "8 badges", description: "CCNA, AWS, Python — vérifiés Credly" },
+    { label: "En production", value: "enigov.tn", description: "Plateforme EniGov déployée" },
   ]
 };
 
@@ -104,6 +110,7 @@ export const techLogosData: TechLogo[] = [
   { name: "Tailwind CSS", category: "Frontend" },
   { name: "Oracle Database", category: "Database" },
   { name: "Docker", category: "DevOps" },
+  { name: "AWS Cloud", category: "Cloud" },
   { name: "CCNA Cisco", category: "Networking" },
   { name: "Git & GitHub", category: "DevOps" },
   { name: "Android (Java)", category: "Mobile" },
@@ -162,10 +169,10 @@ export const projectsData: Project[] = [
     category: "Web",
     badgeType: "Featured",
     year: "2026",
-    description: "Plateforme web officielle de gouvernance pour la communauté de l'ENICarthage. Développée en équipe et déployée en production sur enigov.tn, permettant la gestion centralisée des requêtes étudiantes, votes et sondages.",
+    description: "Plateforme web officielle de gouvernance pour la communauté de l'ENICarthage. Développée en équipe et déployée en production sur enigov.tn, permettant la gestion centralisée des réclamations étudiantes, la communication et le suivi des demandes.",
     detailedPoints: [
       "Conception et développement full-stack réactif et sécurisé.",
-      "Gestion des modules d'administration, requêtes académiques et sondages étudiants.",
+      "Gestion des réclamations étudiantes, communication avec l'administration et suivi des demandes.",
       "Déploiement en production avec nom de domaine dédié (enigov.tn)."
     ],
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js", "Production"],
@@ -279,6 +286,7 @@ export const experienceData: ExperienceItem[] = [
     bullets: [
       "Représentant officiel et porte-parole des élèves ingénieurs auprès de la Direction de l'ENICarthage.",
       "Coordination académique, médiation pédagogique et résolution des problématiques de promotion.",
+      "Membre du Conseil Scientifique de l'école.",
       "Organisation des assemblées et gestion de la stratégie de communication interne."
     ]
   },
@@ -316,7 +324,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "TypeScript / JavaScript", level: "Avancé" },
       { name: "Java (POO, Spring Boot, JDBC)", level: "Avancé" },
       { name: "SQL", level: "Avancé" },
-      { name: "Python", level: "Intermédiaire" },
+      { name: "Python", level: "Certifié PE1 & PE2" },
       { name: "C / C++", level: "Maîtrisé" },
       { name: "HTML5 / CSS3", level: "Avancé" }
     ]
@@ -332,6 +340,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "Angular", level: "Intermédiaire" },
       { name: "Android (Java/XML)", level: "Maîtrisé" },
       { name: "Docker", level: "Intermédiaire" },
+      { name: "AWS Cloud (Foundations)", level: "Certifié" },
       { name: "Git & GitHub Workflows", level: "Avancé" },
       { name: "Maven / VS Code / Figma", level: "Maîtrisé" }
     ]
@@ -356,7 +365,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "VLAN & Inter-VLAN Routing", level: "Solide" },
       { name: "Protocols STP & OSPF", level: "Maîtrisé" },
       { name: "Wireless Networks & DHCP", level: "Maîtrisé" },
-      { name: "Sécurité NAT & ACLs", level: "Maîtrisé" }
+      { name: "Sécurité NAT & ACLs", level: "Maîtrisé" },
+      { name: "Fondamentaux Cybersécurité & IoT", level: "Certifié" }
     ]
   },
   {
@@ -373,22 +383,88 @@ export const skillCategories: SkillCategory[] = [
   }
 ];
 
+const credlyBadge = (id: string) => `https://www.credly.com/badges/${id}/public_url`;
+
 export const certificationsData: Certification[] = [
   {
     id: "ccna",
     title: "CCNA : Switching, Routing, and Wireless Essentials",
-    issuer: "Cisco Networking Academy – ENICarthage",
+    issuer: "Cisco Networking Academy",
     date: "Juin 2026",
-    badgeText: "Cisco Certified",
-    description: "Certification officielle Cisco certifiant la maîtrise des architectures réseau d'entreprise, commutation commutée (Switching), routage dynamique (OSPF), VLANs, sécurité des accès (ACL) et infrastructures sans fil."
+    badgeText: "Réseaux",
+    description: "Architectures réseau d'entreprise : commutation, VLAN & Inter-VLAN, STP, routage OSPF, DHCP, NAT, ACL et réseaux sans fil.",
+    image: "/badges/ccna-srwe.png",
+    verifyUrl: credlyBadge("d3c2c599-a13b-4135-9858-9597f3bcd8bc"),
+    featured: true,
+  },
+  {
+    id: "aws-cloud-foundations",
+    title: "AWS Academy Graduate — Cloud Foundations",
+    issuer: "Amazon Web Services (AWS Academy)",
+    date: "Octobre 2026",
+    badgeText: "Cloud",
+    description: "Fondamentaux du cloud AWS : services cœur (EC2, S3, VPC, RDS), sécurité, architecture, tarification et support.",
+    image: "/badges/aws-cloud-foundations.png",
+    verifyUrl: credlyBadge("0f3b35a5-7f1d-41c4-a795-bfcca85dbe39"),
+    featured: true,
+  },
+  {
+    id: "python-essentials-2",
+    title: "Python Essentials 2",
+    issuer: "Cisco Networking Academy × OpenEDG Python Institute",
+    date: "Octobre 2026",
+    badgeText: "Programmation",
+    description: "Python intermédiaire : modules et packages, exceptions, chaînes, programmation orientée objet et gestion de fichiers.",
+    image: "/badges/python-essentials-2.png",
+    verifyUrl: credlyBadge("5f92e95e-7c76-4b1d-89ad-d50f73e0b4a7"),
+  },
+  {
+    id: "python-essentials-1",
+    title: "Python Essentials 1",
+    issuer: "Cisco Networking Academy × OpenEDG Python Institute",
+    date: "Octobre 2026",
+    badgeText: "Programmation",
+    description: "Bases de la programmation Python : types, opérateurs, contrôle de flux, fonctions, listes, tuples et dictionnaires.",
+    image: "/badges/python-essentials-1.png",
+    verifyUrl: credlyBadge("24d3526c-105d-42b2-8c10-83ed6dab4816"),
+  },
+  {
+    id: "intro-cybersecurity",
+    title: "Introduction to Cybersecurity",
+    issuer: "Cisco Networking Academy",
+    date: "Octobre 2026",
+    badgeText: "Cybersécurité",
+    description: "Menaces, vulnérabilités et attaques courantes, protection des données et des systèmes, bonnes pratiques de sécurité.",
+    image: "/badges/intro-cybersecurity.png",
+    verifyUrl: credlyBadge("dbec3510-adc7-4829-a308-94db07e99b3a"),
+  },
+  {
+    id: "intro-data-science",
+    title: "Introduction to Data Science",
+    issuer: "Cisco Networking Academy",
+    date: "Octobre 2026",
+    badgeText: "Data",
+    description: "Cycle de vie de la donnée, analyse et visualisation, et rôle de la data science dans la prise de décision.",
+    image: "/badges/intro-data-science.png",
+    verifyUrl: credlyBadge("4624f1cb-aaf3-4c20-b5b1-2efd723d215f"),
+  },
+  {
+    id: "intro-iot",
+    title: "Introduction to IoT",
+    issuer: "Cisco Networking Academy",
+    date: "Octobre 2026",
+    badgeText: "IoT",
+    description: "Objets connectés, capteurs, transformation numérique et enjeux de sécurité de l'Internet des Objets.",
+    image: "/badges/intro-iot.png",
+    verifyUrl: credlyBadge("fa35c7b4-7d86-4db5-92d9-3b058c6ce2b6"),
   },
   {
     id: "github",
     title: "GitHub Certification",
     issuer: "GitHub",
     date: "Octobre 2024",
-    badgeText: "DevOps & Versioning",
-    description: "Certification validant l'expertise en gestion de version avec Git, automatisation CI/CD via GitHub Actions et pratiques de développement logiciel collaboratif."
+    badgeText: "DevOps",
+    description: "Gestion de version avec Git, workflows GitHub et pratiques de développement collaboratif.",
   }
 ];
 

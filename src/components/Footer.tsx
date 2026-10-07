@@ -1,6 +1,6 @@
 'use client';
 
-import { Linkedin, Github, Mail, ArrowUp } from 'lucide-react';
+import { Linkedin, Github, Mail, ArrowUp, BadgeCheck } from 'lucide-react';
 import { personalData } from '@/data/portfolioData';
 
 export default function Footer() {
@@ -9,7 +9,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-[#050507] border-t border-gold-400/15 py-10 sm:py-12">
+    <footer className="relative bg-[#050507] border-t border-gold-400/15 pt-10 pb-28 md:py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 pb-8 border-b border-gold-400/10 text-center md:text-left">
           {/* Brand & Subtitle */}
@@ -46,6 +46,15 @@ export default function Footer() {
               className="p-2.5 rounded-full glass-card text-gray-400 hover:text-gold-300 hover:border-gold-400/40 transition-colors"
             >
               <Github className="w-4 h-4" />
+            </a>
+            <a
+              href={personalData.credly}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Credly"
+              className="p-2.5 rounded-full glass-card text-gray-400 hover:text-gold-300 hover:border-gold-400/40 transition-colors"
+            >
+              <BadgeCheck className="w-4 h-4" />
             </a>
             <a
               href={`mailto:${personalData.email}`}

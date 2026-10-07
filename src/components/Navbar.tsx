@@ -6,11 +6,11 @@ import { personalData } from '@/data/portfolioData';
 
 const navItems = [
   { label: 'À propos', href: '#about' },
-  { label: 'Éducation', href: '#education' },
-  { label: 'Projets', href: '#projects' },
   { label: 'Expérience', href: '#experience' },
-  { label: 'Compétences', href: '#skills' },
+  { label: 'Projets', href: '#projects' },
   { label: 'Certifications', href: '#certifications' },
+  { label: 'Compétences', href: '#skills' },
+  { label: 'Formation', href: '#education' },
   { label: 'Contact', href: '#contact' },
 ];
 

@@ -19,9 +19,9 @@ Actuellement à la recherche d'un **stage de fin d'études (PFE)** à partir de 
 - **Établissement** : ENICarthage (École Nationale d'Ingénieurs de Carthage)
 - **Recherche actuelle** : Stage de fin d'études (PFE) — à partir de février 2027, 4 mois minimum, en présentiel
 - **Responsabilités institutionnelles** :
-  - Délégué Général des Étudiants de l'ENICarthage
+  - Délégué Général des Étudiants de l'ENICarthage (membre du Conseil Scientifique)
   - Secrétaire Général du Microsoft Tech Club ENICarthage
-- **Langues** : Arabe (maternelle), Français (courant/académique), Anglais (technique/professionnel)
+- **Langues** : Arabe (maternelle), Français (B2), Anglais (B2)
 
 ## Ensemble des Compétences Techniques (Skills)
 - **Ingénierie Logicielle & Architectures** : Développement Full-Stack, Architecture SaaS, Conception Orientée Objet (POO), API REST, Modélisation UML, Design Patterns.
@@ -29,13 +29,21 @@ Actuellement à la recherche d'un **stage de fin d'études (PFE)** à partir de 
 - **Frameworks & Web** : Next.js, React, Node.js, Express.js, Spring Boot 3, Prisma ORM, Angular, Android (Java/XML), Tailwind CSS.
 - **Bases de Données** : PostgreSQL, Oracle Database, MySQL, MongoDB, SQLite.
 - **Réseaux & Sécurité (CCNA Cisco Certifié)** : Routing & Switching (TCP/IP, OSPF, STP), VLANs & Inter-VLAN, Sécurité (ACLs, NAT), Wireless Networks.
+- **Cloud** : AWS (AWS Academy Cloud Foundations).
 - **DevOps & Outils** : Docker, Git & GitHub Workflows, Maven, VS Code, Linux, Figma.
 - **Soft Skills & Leadership** : Délégué Général ENICarthage, Secrétaire Général Microsoft Tech Club, Leadership, Gestion d'Équipe, Communication, Rigueur & Autonomie.
+
+## Certifications (vérifiables sur Credly : https://www.credly.com/users/mouhib-fahem)
+- CCNA : Switching, Routing, and Wireless Essentials — Cisco Networking Academy, juin 2026
+- AWS Academy Graduate — Cloud Foundations — AWS Academy, octobre 2026
+- Python Essentials 1 & 2 — Cisco Networking Academy × OpenEDG Python Institute, octobre 2026
+- Introduction to Cybersecurity, Introduction to Data Science, Introduction to IoT — Cisco Networking Academy, octobre 2026
+- GitHub Certification — octobre 2024
 
 ## Expériences & Projets Majeurs
 - **Stage Full-Stack chez Clickovate** (Évalué 19/20 — Mention Excellente) : Migration du logiciel desktop Sage 100 Comptabilité vers une plateforme web SaaS (Node.js, Express, Prisma, PostgreSQL, Next.js).
 - **Projet Scoutini Platform** : Plateforme SaaS de détection & recrutement de talents footballistiques en Tunisie (React, Vite, Node.js, Express, Prisma ORM, PostgreSQL).
-- **Projet EniGov (enigov.tn)** : Plateforme web officielle de gouvernance et sondages étudiants pour l'ENICarthage.
+- **Projet EniGov (enigov.tn)** : Plateforme web de gouvernance étudiante de l'ENICarthage (réclamations, communication, suivi des demandes), déployée en production.
 - **Projet BengoDelivery** : Système 3-Tiers Android & Spring Boot 3 avec base Oracle et notifications Firebase FCM.
 - **Stage Réseau chez Tunisie Telecom** : Diagnostic réseau télécom et cartographie SIG/GIS.
 
@@ -43,4 +51,5 @@ Actuellement à la recherche d'un **stage de fin d'études (PFE)** à partir de 
 - **Email** : mouhib.fahem@enicar.ucar.tn
 - **LinkedIn** : https://www.linkedin.com/in/mouhib-fahem-17a1b4342/
 - **GitHub** : https://github.com/mouhibfahem
+- **Credly** : https://www.credly.com/users/mouhib-fahem
 - **Site Web** : https://mouhibfahem.vercel.app

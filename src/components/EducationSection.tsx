@@ -18,7 +18,7 @@ export default function EducationSection() {
             className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill border border-gold-400/30 text-xs font-semibold text-gold-300 uppercase tracking-widest mb-4"
           >
             <GraduationCap className="w-3.5 h-3.5" />
-            <span>03. Éducation</span>
+            <span>06. Formation</span>
           </motion.div>
 
           <motion.h2

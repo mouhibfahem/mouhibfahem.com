@@ -18,7 +18,7 @@ export default function ExperienceSection() {
             className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill border border-gold-400/30 text-xs font-semibold text-gold-300 uppercase tracking-widest mb-4"
           >
             <Briefcase className="w-3.5 h-3.5" />
-            <span>05. Expérience Professionnelle</span>
+            <span>02. Expérience</span>
           </motion.div>
 
           <motion.h2

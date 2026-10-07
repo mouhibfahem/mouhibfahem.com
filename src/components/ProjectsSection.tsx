@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FolderGit2, ExternalLink, Check, Calendar, Info, X } from 'lucide-react';
 import { projectsData, Project } from '@/data/portfolioData';
@@ -10,6 +10,17 @@ const categories = ['Tous', 'Web', 'Mobile', 'Java/Systèmes', 'Architecture/UML
 export default function ProjectsSection() {
   const [selectedCategory, setSelectedCategory] = useState('Tous');
   const [activeProject, setActiveProject] = useState<Project | null>(null);
+
+  useEffect(() => {
+    if (!activeProject) return;
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setActiveProject(null);
+    document.addEventListener('keydown', onKey);
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.body.style.overflow = '';
+    };
+  }, [activeProject]);
 
   const filteredProjects = selectedCategory === 'Tous'
     ? projectsData
@@ -28,7 +39,7 @@ export default function ProjectsSection() {
             className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill border border-gold-400/30 text-xs font-semibold text-gold-300 uppercase tracking-widest mb-4"
           >
             <FolderGit2 className="w-3.5 h-3.5" />
-            <span>04. Projets</span>
+            <span>03. Projets</span>
           </motion.div>
 
           <motion.h2
@@ -182,10 +193,17 @@ export default function ProjectsSection() {
 
         {/* Modal "Voir détails" (Mobile friendly overlay & scrolling) */}
         {activeProject && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-md animate-in fade-in duration-200">
-            <div className="glass-card rounded-2xl max-w-2xl w-full p-5 sm:p-8 relative border border-gold-400/40 max-h-[88vh] overflow-y-auto">
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-label={activeProject.title}
+            onClick={() => setActiveProject(null)}
+            className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-md animate-in fade-in duration-200"
+          >
+            <div onClick={(e) => e.stopPropagation()} className="glass-card rounded-2xl max-w-2xl w-full p-5 sm:p-8 relative border border-gold-400/40 max-h-[88vh] overflow-y-auto">
               <button
                 onClick={() => setActiveProject(null)}
+                aria-label="Fermer"
                 className="absolute top-4 right-4 p-2 rounded-full glass-pill text-gray-400 hover:text-white transition-colors z-10"
               >
                 <X className="w-5 h-5" />

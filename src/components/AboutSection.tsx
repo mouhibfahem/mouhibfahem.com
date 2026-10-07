@@ -1,12 +1,19 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { User, CheckCircle, GraduationCap, Building2 } from 'lucide-react';
+import { User, CheckCircle, GraduationCap, Building2, CalendarClock, MapPin, Languages, Users } from 'lucide-react';
 import { personalData } from '@/data/portfolioData';
+
+const keyFacts = [
+  { Icon: CalendarClock, label: 'Disponibilité', value: 'PFE dès février 2027 · 4 mois min. · présentiel' },
+  { Icon: MapPin, label: 'Localisation', value: personalData.location },
+  { Icon: Users, label: 'Leadership', value: 'Délégué Général ENICarthage · SG Microsoft Tech Club' },
+  { Icon: Languages, label: 'Langues', value: 'Arabe · Français B2 · Anglais B2' },
+];
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-24 relative">
+    <section id="about" className="py-16 sm:py-24 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -18,7 +25,7 @@ export default function AboutSection() {
             className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill border border-gold-400/30 text-xs font-semibold text-gold-300 uppercase tracking-widest mb-4"
           >
             <User className="w-3.5 h-3.5" />
-            <span>02. À propos</span>
+            <span>01. À propos</span>
           </motion.div>
           
           <motion.h2
@@ -118,25 +125,23 @@ export default function AboutSection() {
               </div>
             </div>
 
-            {/* Key Metric Highlights Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-              {personalData.highlights.map((item, idx) => (
+            {/* Key facts for recruiters */}
+            <dl className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+              {keyFacts.map(({ Icon, label, value }) => (
                 <div
-                  key={idx}
-                  className="glass-card p-4 rounded-xl border border-gold-400/15 hover:border-gold-400/40 transition-all duration-300 text-center"
+                  key={label}
+                  className="glass-card p-4 rounded-xl border border-gold-400/15 flex items-start gap-3"
                 >
-                  <div className="text-xl font-serif font-bold text-gold-gradient mb-1">
-                    {item.value}
+                  <div className="p-2 rounded-lg bg-gold-400/10 text-gold-400 shrink-0">
+                    <Icon className="w-4 h-4" />
                   </div>
-                  <div className="text-xs font-semibold text-white">
-                    {item.label}
-                  </div>
-                  <div className="text-[10px] text-gray-400 mt-1">
-                    {item.description}
+                  <div className="min-w-0">
+                    <dt className="text-[10px] uppercase tracking-widest text-gray-500 font-semibold">{label}</dt>
+                    <dd className="text-sm text-gray-200 mt-0.5 leading-snug">{value}</dd>
                   </div>
                 </div>
               ))}
-            </div>
+            </dl>
           </motion.div>
         </div>
       </div>

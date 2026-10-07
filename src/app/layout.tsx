@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: 'Mouhib Fahem — Élève Ingénieur en Génie Informatique | ENICarthage',
-  description: 'Portfolio officiel de Mouhib Fahem, élève ingénieur en Génie Informatique à l\'ENICarthage (Dernière année) et Délégué Général des Étudiants. Spécialisé en ingénierie logicielle, Java, Spring Boot 3, Next.js & Réseaux CCNA.',
+  description: 'Portfolio officiel de Mouhib Fahem, élève ingénieur en Génie Informatique à l\'ENICarthage (Dernière année) et Délégué Général des Étudiants. Développeur full-stack (Next.js, Node.js, Spring Boot), certifié CCNA et AWS Cloud Foundations. Recherche un stage PFE dès février 2027.',
   applicationName: 'Mouhib Fahem',
   appleWebApp: {
     title: 'Mouhib Fahem',
@@ -40,6 +40,8 @@ export const metadata: Metadata = {
     'Scoutini Platform',
     'BengoDelivery',
     'CCNA',
+    'AWS Cloud Foundations',
+    'Stage PFE 2027',
     'Portfolio'
   ],
   authors: [{ name: 'Mouhib Fahem', url: 'https://mouhibfahem.vercel.app' }],
@@ -111,6 +113,7 @@ const structuredDataGraph = {
       'sameAs': [
         'https://www.linkedin.com/in/mouhib-fahem-17a1b4342/',
         'https://github.com/mouhibfahem',
+        'https://www.credly.com/users/mouhib-fahem',
       ],
       'jobTitle': 'Élève Ingénieur en Génie Informatique',
       'description': 'Élève ingénieur en dernière année de Génie Informatique à l\'ENICarthage, développeur logiciel full-stack et réseaux CCNA.',
@@ -152,7 +155,25 @@ const structuredDataGraph = {
         'PostgreSQL',
         'Sage 100 SaaS Migration',
         'Cisco CCNA Networking',
+        'AWS Cloud',
+        'Python',
+        'Cybersecurity',
       ],
+      'hasCredential': [
+        ['CCNA: Switching, Routing, and Wireless Essentials', 'Cisco', 'https://www.credly.com/badges/d3c2c599-a13b-4135-9858-9597f3bcd8bc/public_url'],
+        ['AWS Academy Graduate - Cloud Foundations', 'Amazon Web Services', 'https://www.credly.com/badges/0f3b35a5-7f1d-41c4-a795-bfcca85dbe39/public_url'],
+        ['Python Essentials 1', 'Cisco', 'https://www.credly.com/badges/24d3526c-105d-42b2-8c10-83ed6dab4816/public_url'],
+        ['Python Essentials 2', 'Cisco', 'https://www.credly.com/badges/5f92e95e-7c76-4b1d-89ad-d50f73e0b4a7/public_url'],
+        ['Introduction to Cybersecurity', 'Cisco', 'https://www.credly.com/badges/dbec3510-adc7-4829-a308-94db07e99b3a/public_url'],
+        ['Introduction to Data Science', 'Cisco', 'https://www.credly.com/badges/4624f1cb-aaf3-4c20-b5b1-2efd723d215f/public_url'],
+        ['Introduction to IoT', 'Cisco', 'https://www.credly.com/badges/fa35c7b4-7d86-4db5-92d9-3b058c6ce2b6/public_url'],
+      ].map(([name, issuer, url]) => ({
+        '@type': 'EducationalOccupationalCredential',
+        'name': name,
+        'credentialCategory': 'badge',
+        'url': url,
+        'recognizedBy': { '@type': 'Organization', 'name': issuer },
+      })),
       'email': 'mailto:mouhib.fahem@enicar.ucar.tn',
     },
     {

@@ -9,6 +9,7 @@ import SkillsSection from '@/components/SkillsSection';
 import CertificationsSection from '@/components/CertificationsSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import QuickActions from '@/components/QuickActions';
 
 export default function Home() {
   return (
@@ -16,35 +17,38 @@ export default function Home() {
       {/* Translucent Sticky Navbar */}
       <Navbar />
 
-      {/* 1. Hero Section */}
+      {/* Hero */}
       <HeroSection />
 
       {/* Marquee horizontal défilant pour les logos / technologies */}
       <TechMarquee />
 
-      {/* 2. À propos Section */}
+      {/* 1. À propos */}
       <AboutSection />
 
-      {/* 3. Éducation Section */}
-      <EducationSection />
-
-      {/* 4. Projets Section */}
-      <ProjectsSection />
-
-      {/* 5. Expérience Professionnelle Section */}
+      {/* 2. Expérience */}
       <ExperienceSection />
 
-      {/* 6. Compétences Techniques Section */}
-      <SkillsSection />
+      {/* 3. Projets */}
+      <ProjectsSection />
 
-      {/* 7. Certifications & Langues Section */}
+      {/* 4. Certifications & Langues */}
       <CertificationsSection />
 
-      {/* 8. Contact Section */}
+      {/* 5. Compétences */}
+      <SkillsSection />
+
+      {/* 6. Formation */}
+      <EducationSection />
+
+      {/* 7. Contact */}
       <ContactSection />
 
       {/* Footer */}
       <Footer />
+
+      {/* Barre d'actions rapides (mobile) */}
+      <QuickActions />
     </main>
   );
 }

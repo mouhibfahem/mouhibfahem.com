@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, Linkedin, MapPin, Copy, Check, Send, Download, ArrowUpRight, Globe, Sparkles } from 'lucide-react';
+import { Mail, Phone, Linkedin, MapPin, Copy, Check, Send, Download, ArrowUpRight, Github, BadgeCheck, Sparkles } from 'lucide-react';
 import { personalData } from '@/data/portfolioData';
 
 export default function ContactSection() {
@@ -43,7 +43,7 @@ export default function ContactSection() {
             className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill border border-gold-400/30 text-xs font-semibold text-gold-300 uppercase tracking-widest mb-4"
           >
             <Mail className="w-3.5 h-3.5" />
-            <span>08. Contact</span>
+            <span>07. Contact</span>
           </motion.div>
 
           <motion.h2
@@ -67,7 +67,7 @@ export default function ContactSection() {
             className="inline-flex items-center gap-2 px-4 py-2.5 mt-5 rounded-xl glass-card border border-gold-400/35 bg-gold-400/10 text-gold-200 text-xs sm:text-sm font-medium shadow-gold-sm"
           >
             <Sparkles className="w-4 h-4 text-gold-400 shrink-0 animate-pulse" />
-            <span>Recherche un stage PFE — à partir de février 2027, 4 mois minimum, en présentiel</span>
+            <span>{personalData.availability}</span>
           </motion.div>
         </div>
 
@@ -139,18 +139,44 @@ export default function ContactSection() {
                   </a>
                 </div>
 
-                {/* Location & Domain */}
-                <div className="flex items-center gap-2.5 sm:gap-3 p-3 sm:p-3.5 rounded-xl bg-dark-900/60 border border-gold-400/15">
-                  <div className="p-2 sm:p-2.5 rounded-lg bg-gold-400/10 text-gold-400 shrink-0">
-                    <Globe className="w-4 h-4 sm:w-5 sm:h-5" />
+                {/* GitHub */}
+                <a
+                  href={personalData.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between gap-2 p-3 sm:p-3.5 rounded-xl bg-dark-900/60 border border-gold-400/15 hover:border-gold-400/40 transition-colors min-w-0 group"
+                >
+                  <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
+                    <div className="p-2 sm:p-2.5 rounded-lg bg-gold-400/10 text-gold-400 shrink-0">
+                      <Github className="w-4 h-4 sm:w-5 sm:h-5" />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <div className="text-[10px] sm:text-[11px] text-gray-400 font-medium uppercase">GitHub</div>
+                      <span className="text-xs sm:text-sm font-semibold text-white group-hover:text-gold-300 transition-colors truncate block">github.com/mouhibfahem</span>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-[10px] sm:text-[11px] text-gray-400 font-medium uppercase">Domaine Web</div>
-                    <span className="text-xs sm:text-sm font-semibold text-white">
-                      {personalData.domain}
-                    </span>
+                  <ArrowUpRight className="w-4 h-4 text-gold-300 shrink-0 mr-2" />
+                </a>
+
+                {/* Credly (badges vérifiés) */}
+                <a
+                  href={personalData.credly}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between gap-2 p-3 sm:p-3.5 rounded-xl bg-dark-900/60 border border-gold-400/15 hover:border-gold-400/40 transition-colors min-w-0 group"
+                >
+                  <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
+                    <div className="p-2 sm:p-2.5 rounded-lg bg-gold-400/10 text-gold-400 shrink-0">
+                      <BadgeCheck className="w-4 h-4 sm:w-5 sm:h-5" />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <div className="text-[10px] sm:text-[11px] text-gray-400 font-medium uppercase">Credly (badges vérifiés)</div>
+                      <span className="text-xs sm:text-sm font-semibold text-white group-hover:text-gold-300 transition-colors truncate block">credly.com/users/mouhib-fahem</span>
+                    </div>
                   </div>
-                </div>
+                  <ArrowUpRight className="w-4 h-4 text-gold-300 shrink-0 mr-2" />
+                </a>
+
               </div>
 
               {/* Download CV CTA */}
